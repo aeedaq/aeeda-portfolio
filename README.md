@@ -1,2 +1,0 @@
-# aeeda-portfolio
-hire me?

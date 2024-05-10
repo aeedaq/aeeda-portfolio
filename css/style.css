@@ -1,0 +1,140 @@
+html {
+  scroll-behavior:auto;  
+  background-color: rgb(255, 252, 247);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200; 
+  font-size: 2vw;
+  cursor: url('assets/pics/cursor1.png');
+
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; 
+  font-size: 7vw;
+}
+
+.main-div {
+  margin: 0 auto;
+  width: 70%; /* Устанавливаем ширину main-div, чтобы создать отступы 15% с каждой стороны */
+  text-align: center; /* Центрируем содержимое main-div по горизонтали */
+
+}
+
+.main-div > div {
+  margin: 0 auto; /* Центрируем все дочерние div'ы по горизонтали */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем содержимое дочерних div'ов по горизонтали */
+  margin-bottom: 30vh;
+
+}
+
+/* Styles for the header */
+header {
+  position: fixed; /* Stick the header to the top of the page */
+  top: 0; /* Place the header at the top */
+  left: 15%; /* Align the header with the main div */
+  width: 70%; /* Match the width of the main div */
+  background-color: rgb(255, 252, 247);
+  z-index: 1000; /* Ensure header is above other content */
+  padding: 10px 0; /* Add vertical padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute space evenly */
+  /* Removed the shadow */
+}
+
+/* Styles for navigation links */
+header nav {
+  display: flex; /* Flexbox layout for alignment */
+  margin: 0; /* Remove margin */
+  padding: 0 10px; /* Add padding to the nav */
+}
+
+header nav a {
+  text-decoration: none; /* Remove underlines from links */
+  color: inherit; /* Use the same color as the rest of the text */
+  margin: 0 10px; /* Add horizontal space between links */
+}
+.my-picture {
+  width: 30vw;
+ 
+}
+
+a {
+  border: 1px solid black; 
+  padding: 3px;
+}
+
+.my-info-div{
+  text-align: start;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #75ff75;
+  text-underline-offset: 8px;
+}
+
+#smm-div, #non-profit-div, #photo-div {
+  /* Ensure they are visible initially */
+  opacity: 1;
+}
+
+.smm-video {
+  width: 15vw;
+}
+
+.smm-videos-div {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  grid-gap: 10px; /* Space between grid items */
+  margin-bottom: 20px; /* Optional: add bottom margin if needed */
+}
+
+.non-profit-video {
+  width: 20vw;
+}
+
+.big-photos-div {
+  display: flex; /* Use flexbox for rows */
+  flex-direction: column; /* Arrange rows vertically */
+  gap: 10px; /* Add space between rows */
+}
+
+/* Define the first row */
+.first-row {
+  display: flex; /* Use flexbox for the first row */
+  justify-content: center; /* Center the images */
+  gap: 10px; /* Add space between images */
+}
+
+/* Define the width for images in the first row */
+.first-row .big-photo1,
+.first-row .big-photo2 {
+  width: 60%; /* Each image takes up 30% of the container width */
+}
+
+/* Define the second row */
+.second-row {
+  display: flex; /* Use flexbox for the second row */
+  justify-content: center; /* Center the images */
+  gap: 10px; /* Add space between images */
+}
+
+/* Define the width for images in the second row */
+.second-row .big-photo3,
+.second-row .big-photo4,
+.second-row .big-photo5 {
+  width: 40%; /* Each image takes up 20% of the container width */
+}
+
+/* Common styles for all images */
+.big-photo1, .big-photo2, .big-photo3, .big-photo4, .big-photo5 {
+  width: 100%; /* Each image takes up the full width of its flex container */
+  object-fit: cover; /* Ensure the images maintain their aspect ratio */
+}
