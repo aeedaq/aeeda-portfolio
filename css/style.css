@@ -85,9 +85,7 @@ a {
   opacity: 1;
 }
 
-.smm-video {
-  width: 15vw;
-}
+
 
 .smm-videos-div {
   display: grid; /* Use grid layout */
@@ -137,4 +135,33 @@ a {
 .big-photo1, .big-photo2, .big-photo3, .big-photo4, .big-photo5 {
   width: 100%; /* Each image takes up the full width of its flex container */
   object-fit: cover; /* Ensure the images maintain their aspect ratio */
+}
+
+
+.smm-div {
+  padding: 20px;
+}
+
+.video-and-description-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Высота контейнера, заполняющая экран */
+}
+
+.video-smm, .description-smm {
+  width: 50%; /* Оба блока занимают 50% ширины контейнера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smm-video {
+  width: 80%; /* Видео занимает 50% ширины блока video-smm */
+  height: auto; /* Сохранение пропорций видео */
+  object-fit: contain;
+}
+
+.words-in-desc {
+  text-align: left;
+  font-size: 18px;
 }
